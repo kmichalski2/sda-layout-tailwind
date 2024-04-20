@@ -1,0 +1,30 @@
+.icon {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+}
+
+.icon-search {
+    content: url("assets/icons/search.svg");
+}
+
+.icon-filter {
+    content: url("assets/icons/filter.svg");
+}
+
+.btn-icon-group {
+    position: relative;
+}
+
+.btn-icon {
+    position: absolute;
+    top: 12px;
+    left: 24px;
+    content: url("assets/icons/search.svg");
+    width: 24px;
+    height: 24px;
+}
+
+.btn-icon-group-input {
+    padding-left: 72px;
+}

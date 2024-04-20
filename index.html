@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rentcar</title>
+    <link rel="stylesheet" href="icons.css">
+</head>
+<body>
+    <header class="mx-10 my-10">
+        <div class="flex align-center justify-between mb-12">
+            <img width="108" src="assets/logo.svg" alt="Morent">
+            <img class="w-7 h-7" src="assets/avatar.png">
+        </div>
+        <div class="flex align-center justify-between gap-x-4">
+            <div class="btn-icon-group">
+                <i class="icon icon-search btn-icon"></i>
+                <input class="btn-icon-group-input flex-1 p-3 border-stroke border rounded-lg" type="search">
+            </div>
+           
+            <button class="p-3 border-stroke border rounded-lg">
+                <i class="icon icon-filter"></i>
+            </button>
+        </div>
+        
+    </header>
+    <h1 class="text-primary-500 text-6xl">Tekst</h1>
+
+    <div class="w-1/2 h-1/2 bg-primary-900">
+        <h3 class="text-primary-100 text-lg">Hello</h3>
+    </div>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                colors: {
+                    'white': '#FFFFFF',
+                    'stroke': 'rgba(195, 212, 233, 0.4)',
+                    'primary': {
+                        100: '#D6E4FD',
+                        200: '#AEC8FC',
+                        300: '#85A8F8',
+                        400: '#658DF1',
+                        500: '#3563E9',
+                        600: '#264BC8',
+                        700: '#1A37A7',
+                        800: '#102587',
+                        900: '#0A196F'
+                    },
+                    
+                },
+                fontSize: {
+                    'xs': '12px',
+                    'sm': '14px',
+                    'base': '16px',
+                    'lg': '18px',
+                    'xl': '20px',
+                    '2xl': '24px',
+                    '3xl': '32px',
+                    '4xl': '36px',
+                    '5xl': '40px',
+                    '6xl': '72px'
+                },
+                borderRadius: {
+                    'lg': '10px'
+                }
+            }
+        }
+    </script>
+</body>
+</html>
