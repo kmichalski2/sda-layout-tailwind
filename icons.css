@@ -25,6 +25,8 @@
 }
 
 
-.btn-icon-group-input {
-    padding-left: 72px;
+.bg-circle {
+    background-image: url("assets/card-bg.svg");
+    background-repeat: no-repeat;
+    background-position: left bottom;
 }

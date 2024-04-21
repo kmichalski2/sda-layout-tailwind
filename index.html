@@ -53,14 +53,22 @@
     </header> 
 
     <main>
-        <section id="promotion" class="mx-6">
-            <div>
-                <h3>The Best Platform for Car Rental</h3>
-                <p>
+        <section id="promotion" class="mx-6 flex gap-x-8">
+            <div class="flex-1 bg-information-500 rounded-lg p-4 bg-circle-pattern bg-no-repeat bg-left-bottom">
+                <h3 class="text-white text-base md:text-3xl font-semibold mb-3 w-1/2">The Best Platform for Car Rental</h3>
+                <p class="text-white text-xs md:text-base font-medium mb-4 w-1/2">
                     Ease of doing a car rental safely and reliably. Of course at a low price.
                 </p>
-                <button>Rental Car</button>
-                <img src="assets/car-1.png">
+                <button class="text-white text-xs md:text-base font-semibold bg-primary-500 rounded py-3.5 px-7 mb-6.5 md:mb-0">Rental Car</button>
+                <img class="md:-mt-2 mx-auto" src="assets/car-1.png">
+            </div>
+            <div class="hidden md:block flex-1 bg-primary-500 rounded-lg p-4 bg-arrows-pattern bg-repeat-x bg-left-bottom">
+                <h3 class="text-white text-base md:text-3xl font-semibold mb-3 w-1/2">Easy way to rent a car at a low price</h3>
+                <p class="text-white text-xs md:text-base font-medium mb-4 w-1/2">
+                    Providing cheap car rental services and safe and comfortable facilities.
+                </p>
+                <button class="text-white text-xs md:text-base font-semibold bg-information-500 rounded py-3.5 px-7 mb-6.5 md:mb-0">Rental Car</button>
+                <img class="md:-mt-2 mx-auto" src="assets/car-2.png">
             </div>
         </section>
     </main>
@@ -154,11 +162,16 @@
                 },
                 extend: {
                     spacing: {
+                        '6.5': '26px',
                         '15': '60px'
                     },
                     borderRadius: {
                         'lg': '10px'
                     },
+                    backgroundImage: {
+                        'circle-pattern': 'url("assets/card-bg.svg")',
+                        'arrows-pattern': 'url("assets/arrows-bg.svg")'
+                    }
                 }
             }
         }
