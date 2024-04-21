@@ -12,18 +12,18 @@
     content: url("assets/icons/filter.svg");
 }
 
-.btn-icon-group {
-    position: relative;
+.icon-heart {
+    content: url("assets/icons/heart.svg");
 }
 
-.btn-icon {
-    position: absolute;
-    top: 12px;
-    left: 24px;
-    content: url("assets/icons/search.svg");
-    width: 24px;
-    height: 24px;
+.icon-notification {
+    content: url("assets/icons/notification.svg");
 }
+
+.icon-settings {
+    content: url("assets/icons/settings.svg");
+}
+
 
 .btn-icon-group-input {
     padding-left: 72px;

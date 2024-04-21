@@ -7,28 +7,50 @@
     <link rel="stylesheet" href="icons.css">
 </head>
 <body>
-    <header class="mx-10 my-10">
-        <div class="flex align-center justify-between mb-12">
-            <img width="108" src="assets/logo.svg" alt="Morent">
-            <img class="w-7 h-7" src="assets/avatar.png">
-        </div>
-        <div class="flex align-center justify-between gap-x-4">
-            <div class="btn-icon-group">
-                <i class="icon icon-search btn-icon"></i>
-                <input class="btn-icon-group-input flex-1 p-3 border-stroke border rounded-lg" type="search">
+    <header id="mobile-header" class="mx-6 my-8 md:hidden">
+            <div class="flex align-center justify-between mb-8">
+                <img width="108" src="assets/logo.svg" alt="Morent">
+                <img class="w-7 h-7" src="assets/avatar.png">
+            </div>
+            <div class="flex align-center justify-between gap-x-4">
+                <div class="relative flex-1">
+                    <i class="icon icon-search absolute top-3 left-6"></i>
+                    <input class="p-3 pl-14 w-full h-12 border-stroke border rounded-lg placeholder:text-secondary-400 placeholder:text-sm" type="search" placeholder="Search something here">
+                </div>
+               
+                <button class="p-3 h-12 border-stroke border rounded-lg">
+                    <i class="icon icon-filter"></i>
+                </button>
+            </div>
+    </header>
+    <header id="desktop-header"  class="hidden md:flex align-center justify-start my-10 mx-15 gap-x-16">
+        <img id="logo" width="108" src="assets/logo.svg" alt="Morent">
+
+        <div id="search-box" class="flex align-center justify-between gap-x-4" style="flex-basis: 492px">
+            <div class="relative flex-1">
+                <i class="icon icon-search absolute top-3 left-6"></i>
+                <input class="p-3 pl-14 w-full h-12 border-stroke border rounded-lg placeholder:text-secondary-400 placeholder:text-sm" type="search" placeholder="Search something here">
             </div>
            
-            <button class="p-3 border-stroke border rounded-lg">
+            <button class="p-3 h-12 border-stroke border rounded-lg">
                 <i class="icon icon-filter"></i>
             </button>
         </div>
-        
-    </header>
-    <h1 class="text-primary-500 text-6xl">Tekst</h1>
 
-    <div class="w-1/2 h-1/2 bg-primary-900">
-        <h3 class="text-primary-100 text-lg">Hello</h3>
-    </div>
+        <div id="user-menu" class="flex flex-auto justify-end items-center gap-x-4">
+            <a href="#">
+                <i class="icon icon-heart"></i>
+            </a>
+            <a href="#">
+                <i class="icon icon-notification"></i>
+            </a>
+            <a href="#">
+                <i class="icon icon-settings"></i>
+            </a>
+            <img class="w-7 h-7" src="assets/avatar.png">
+        </div>
+    </header> 
+
     
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -64,6 +86,11 @@
                 },
                 borderRadius: {
                     'lg': '10px'
+                },
+                extend: {
+                    spacing: {
+                        '15': '60px'
+                    }
                 }
             }
         }
