@@ -26,13 +26,13 @@
     <header id="desktop-header"  class="hidden md:flex align-center justify-start my-10 mx-15 gap-x-16">
         <img id="logo" width="108" src="assets/logo.svg" alt="Morent">
 
-        <div id="search-box" class="flex align-center justify-between gap-x-4" style="flex-basis: 492px">
+        <div id="search-box" class="flex align-center border-stroke border rounded-full" style="flex-basis: 492px">
             <div class="relative flex-1">
                 <i class="icon icon-search absolute top-3 left-6"></i>
-                <input class="p-3 pl-14 w-full h-12 border-stroke border rounded-lg placeholder:text-secondary-400 placeholder:text-sm" type="search" placeholder="Search something here">
+                <input class="p-3 pl-14 w-full h-12 rounded-s-full placeholder:text-secondary-400 placeholder:text-sm" type="search" placeholder="Search something here">
             </div>
            
-            <button class="p-3 h-12 border-stroke border rounded-lg">
+            <button class="p-3 pr-5 h-12">
                 <i class="icon icon-filter"></i>
             </button>
         </div>
@@ -84,13 +84,13 @@
                     '5xl': '40px',
                     '6xl': '72px'
                 },
-                borderRadius: {
-                    'lg': '10px'
-                },
                 extend: {
                     spacing: {
                         '15': '60px'
-                    }
+                    },
+                    borderRadius: {
+                        'lg': '10px'
+                    },
                 }
             }
         }
