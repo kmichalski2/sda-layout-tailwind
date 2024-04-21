@@ -24,6 +24,30 @@
     content: url("assets/icons/settings.svg");
 }
 
+.icon-light-swap {
+    content: url("assets/icons/light-swap.svg");
+}
+
+.marker {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+    background: red;
+    position: relative;
+}
+
+.marker:before {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  background: green;
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+}
 
 .bg-circle {
     background-image: url("assets/card-bg.svg");

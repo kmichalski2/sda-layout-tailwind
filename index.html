@@ -6,13 +6,13 @@
     <title>Rentcar</title>
     <link rel="stylesheet" href="icons.css">
 </head>
-<body>
+<body class="bg-lightblue">
     <header id="mobile-header" class="mx-6 my-8 md:hidden">
-            <div class="flex align-center justify-between mb-8">
+            <div class="flex items-center justify-between mb-8">
                 <img width="108" src="assets/logo.svg" alt="Morent">
                 <img class="w-7 h-7" src="assets/avatar.png">
             </div>
-            <div class="flex align-center justify-between gap-x-4">
+            <div class="flex items-center justify-between gap-x-4">
                 <div class="relative flex-1">
                     <i class="icon icon-search absolute top-3 left-6"></i>
                     <input class="p-3 pl-14 w-full h-12 border-stroke border rounded-lg placeholder:text-secondary-400 placeholder:text-sm" type="search" placeholder="Search something here">
@@ -23,10 +23,10 @@
                 </button>
             </div>
     </header>
-    <header id="desktop-header"  class="hidden md:flex align-center justify-start my-10 mx-15 gap-x-16">
+    <header id="desktop-header"  class="hidden md:flex items-center justify-start my-10 mx-15 gap-x-16">
         <img id="logo" width="108" src="assets/logo.svg" alt="Morent">
 
-        <div id="search-box" class="flex align-center border-stroke border rounded-full" style="flex-basis: 492px">
+        <div id="search-box" class="flex items-center border-stroke border rounded-full" style="flex-basis: 492px">
             <div class="relative flex-1">
                 <i class="icon icon-search absolute top-3 left-6"></i>
                 <input class="p-3 pl-14 w-full h-12 rounded-s-full placeholder:text-secondary-400 placeholder:text-sm" type="search" placeholder="Search something here">
@@ -52,8 +52,8 @@
         </div>
     </header> 
 
-    <main>
-        <section id="promotion" class="mx-6 flex gap-x-8">
+    <main class="mx-6 md:mx-15">
+        <section id="promotion" class="mb-8 flex gap-x-8">
             <div class="flex-1 bg-information-500 rounded-lg p-4 bg-circle-pattern bg-no-repeat bg-left-bottom">
                 <h3 class="text-white text-base md:text-3xl font-semibold mb-3 w-1/2">The Best Platform for Car Rental</h3>
                 <p class="text-white text-xs md:text-base font-medium mb-4 w-1/2">
@@ -71,6 +71,72 @@
                 <img class="md:-mt-2 mx-auto" src="assets/car-2.png">
             </div>
         </section>
+
+        <section id="filter" class="md:flex md:items-center md:gap-x-11">
+            <div id="pick-up" class="p-4 md:py-6 md:px-12 rounded-lg bg-primary-0 md:flex-1">
+                <h3 class="text-secondary-500 text-base font-semibold flex items-center gap-x-2 mb-6">
+                    <i class="inline-block w-2 h-2 rounded-full outline outline-4 outline-primary-300 bg-primary-500"></i>
+                    <span>Pick - Up</span>
+                </h3>
+                <div class="flex gap-x-5">
+                    <div class="flex-1 border-r border-stroke pe-5">
+                        <label class="block text-base font-bold text-secondary-500 mb-2">Locations</label>
+                        <select class="text-secondary-300 text-xs font-regular">
+                            <option selected disabled>Select your city</option>
+                            <option>Kraków Airport</option>
+                        </select>
+                    </div>
+                    <div class="flex-1 border-r border-stroke pe-5">
+                        <label class="block text-base font-bold text-secondary-500 mb-2">Date</label>
+                        <select class="text-secondary-300 text-xs font-regular">
+                            <option selected disabled>Select date</option>
+                            <option>21.04.04</option>
+                        </select>
+                    </div>
+                    <div class="flex-1">
+                        <label class="block text-base font-bold text-secondary-500 mb-2">Time</label>
+                        <select class="text-secondary-300 text-xs font-regular">
+                            <option selected disabled>Select  time</option>
+                            <option>12:00</option>
+                        </select>
+                    </div>
+                </div>
+                
+            </div>
+            <button class="block w-15 h-15 mx-auto -mt-4 -mb-4 relative z-10 p-4 bg-primary-500 rounded-lg shadow-xl">
+                <i class="icon icon-light-swap"></i>
+            </button>
+            <div id="drop-off" class="p-4 md:py-6 md:px-12 rounded-lg bg-primary-0 md:flex-1">
+                <h3 class="text-secondary-500 text-base font-semibold flex items-center gap-x-2 mb-6">
+                    <i class="inline-block w-2 h-2 rounded-full outline outline-4 outline-information-300 bg-information-500"></i>
+                    <span>Drop - Off</span>
+                </h3>
+                <div class="flex gap-x-5">
+                    <div class="flex-1 border-r border-stroke pe-5">
+                        <label class="block text-base font-bold text-secondary-500 mb-2">Locations</label>
+                        <select class="text-secondary-300 text-xs font-regular">
+                            <option selected disabled>Select your city</option>
+                            <option>Kraków Airport</option>
+                        </select>
+                    </div>
+                    <div class="flex-1 border-r border-stroke pe-5">
+                        <label class="block text-base font-bold text-secondary-500 mb-2">Date</label>
+                        <select class="text-secondary-300 text-xs font-regular">
+                            <option selected disabled>Select date</option>
+                            <option>21.04.04</option>
+                        </select>
+                    </div>
+                    <div class="flex-1">
+                        <label class="block text-base font-bold text-secondary-500 mb-2">Time</label>
+                        <select class="text-secondary-300 text-xs font-regular">
+                            <option selected disabled>Select  time</option>
+                            <option>12:00</option>
+                        </select>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
     </main>
     
     <script src="https://cdn.tailwindcss.com"></script>
@@ -80,7 +146,9 @@
                 colors: {
                     'white': '#FFFFFF',
                     'stroke': 'rgba(195, 212, 233, 0.4)',
+                    'lightblue': '#F6F7F9',
                     'primary': {
+                        0: '#FFFFFF',
                         100: '#D6E4FD',
                         200: '#AEC8FC',
                         300: '#85A8F8',
